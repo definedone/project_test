@@ -10,11 +10,13 @@ make a conflict:
 
 copy folder of repository, origin folder mark as A, copied folder mark as B;
 
-Eidt file README.md, comit and push in A, but not do this in B.
+Eidt file README.md, comit and push in A, but not do this in B;
 
-Eidt file README.md for anothor info in B, but not do this at A.
+Eidt file README.md for anothor info in B, but not do this at A;
 
-Fetch remote B, merge B so here will be a confilct.
+Fetch remote B, merge B so here will be a confilct;
+
+Resolve the confilct and push to origin respository.
 
 4 summarize the above experiment, my git workflow:
 
@@ -32,4 +34,4 @@ Jerry: Jerry checkout eidt_branch, merge master branch;
 
 Jerry: Jerry resolve conflict in eidt_branch, and commit a version after merge(version 4), and push to origin respository;
 
-
+5 delete folder B, add my git command text files to respository to folder A, and commit and push to origin.

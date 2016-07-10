@@ -1,0 +1,10 @@
+cd E:\world\develop\java\android\git\project_test
+https://github.com/definedone/project_test.git
+
+
+
+2016-7-10
+C:\Users\Administrator\.gitconfig
+[user]
+	email = definedone@163.com
+	name = definedone

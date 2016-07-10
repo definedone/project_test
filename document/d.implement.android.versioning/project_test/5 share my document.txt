@@ -1,0 +1,88 @@
+
+2016-7-10
+
+Microsoft Windows [版本 10.0.10586]
+(c) 2015 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>cd E:\world\develop\java\android\git\project_test
+
+C:\Users\Administrator>E:
+
+E:\world\develop\java\android\git\project_test>git pull
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 8 (delta 2), reused 8 (delta 2), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From https://github.com/definedone/project_test
+   0d4d1b4..4631503  master     -> origin/master
+Updating 0d4d1b4..4631503
+Fast-forward
+ project_test_one/readme.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+E:\world\develop\java\android\git\project_test>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+E:\world\develop\java\android\git\project_test>cd E:\world\develop\java\android\git\project_test_two
+
+E:\world\develop\java\android\git\project_test_two>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\world\develop\java\android\git\project_test_two>git add --all
+
+E:\world\develop\java\android\git\project_test_two>git commit -m "add a summary in README.md"
+[master 33ac7e5] add a summary in README.md
+ 1 file changed, 17 insertions(+)
+
+E:\world\develop\java\android\git\project_test_two>git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 712 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/definedone/project_test.git
+   4631503..33ac7e5  master -> master
+
+E:\world\develop\java\android\git\project_test_two>cd E:\world\develop\java\android\git\project_test
+
+E:\world\develop\java\android\git\project_test>git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/definedone/project_test
+   4631503..33ac7e5  master     -> origin/master
+Updating 4631503..33ac7e5
+Fast-forward
+ README.md | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+E:\world\develop\java\android\git\project_test>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        document.20160327/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\world\develop\java\android\git\project_test>git add --all
+
+E:\world\develop\java\android\git\project_test>

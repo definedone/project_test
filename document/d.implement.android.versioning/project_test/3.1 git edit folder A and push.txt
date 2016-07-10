@@ -1,0 +1,54 @@
+
+2016-7-10
+Microsoft Windows [版本 10.0.10586]
+(c) 2015 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>cd E:\world\develop\java\android\git\project_test
+
+C:\Users\Administrator>E:
+
+E:\world\develop\java\android\git\project_test>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   project_test_one/readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\world\develop\java\android\git\project_test>git diff
+diff --git a/project_test_one/readme.txt b/project_test_one/readme.txt
+index f0f7871..1a6cbc9 100644
+--- a/project_test_one/readme.txt
++++ b/project_test_one/readme.txt
+@@ -7,3 +7,6 @@ add one line in master branch 2016/7/7
+ =======
+ add line new_branch_one 2016/7/7
+ >>>>>>> new_branch_one
++
++
++add one line in folder A at 2016-7-10
+
+E:\world\develop\java\android\git\project_test>git add --all
+
+E:\world\develop\java\android\git\project_test>git commit -m "edit folder A"
+[master 0d4d1b4] edit folder A
+ 1 file changed, 3 insertions(+)
+
+E:\world\develop\java\android\git\project_test>git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 428 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+To https://github.com/definedone/project_test.git
+   036fd12..0d4d1b4  master -> master
+Branch master set up to track remote branch master from origin.
+
+E:\world\develop\java\android\git\project_test>git branch -a
+* master
+  remotes/origin/master
+
+E:\world\develop\java\android\git\project_test>

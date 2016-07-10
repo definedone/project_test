@@ -1,0 +1,17 @@
+
+2016-7-10
+https://github.com/git/git
+
+
+E:\world\develop\java\android\git\project_test>cd E:\world\develop\java\android\opensource\com.github\git\git
+
+E:\world\develop\java\android\opensource\com.github\git\git>git clone https://github.com/git/git.git
+Cloning into 'git'...
+remote: Counting objects: 206226, done.
+remote: Total 206226 (delta 0), reused 0 (delta 0), pack-reused 206226
+Receiving objects: 100% (206226/206226), 91.01 MiB | 69.00 KiB/s, done.
+Resolving deltas: 100% (149959/149959), done.
+Checking connectivity... done.
+Checking out files: 100% (2938/2938), done.
+
+

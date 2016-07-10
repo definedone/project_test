@@ -1,0 +1,35 @@
+
+2016-7-10
+Microsoft Windows [版本 10.0.10586]
+(c) 2015 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>cd E:\world\develop\java\android\git\project_test
+
+C:\Users\Administrator>E:
+
+E:\world\develop\java\android\git\project_test>git remote add origin https://github.com/definedone/project_test.git
+
+E:\world\develop\java\android\git\project_test>git branch -a
+* master
+
+E:\world\develop\java\android\git\project_test>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': ^C
+E:\world\develop\java\android\git\project_test>git push -u origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 543 bytes | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/definedone/project_test.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+E:\world\develop\java\android\git\project_test>git branch
+* master
+
+E:\world\develop\java\android\git\project_test>git branch -a
+* master
+  remotes/origin/master
+
+E:\world\develop\java\android\git\project_test>

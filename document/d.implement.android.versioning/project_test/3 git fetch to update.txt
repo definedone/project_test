@@ -1,0 +1,104 @@
+2016-7-10
+E:\world\develop\java\android\opensource\com.github\git\git>a make a conflict
+'a' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+E:\world\develop\java\android\opensource\com.github\git\git>cd E:\world\develop\java\android\git\project_test
+
+E:\world\develop\java\android\git\project_test>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\world\develop\java\android\git\project_test>git diff
+diff --git a/README.md b/README.md
+index 8efb74c..d729b23 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,11 @@
+ "# project_test"
++
++1 git init repository
++2 git push origin
++3 git fetch to update
++make a conflict:
++copy folder of repository, origin folder mark as A, copied folder mark as B;
++Eidt file README.md, comit and push in A, but not do this in B.
++Eidt file README.md for anothor info in B, but not do this at A.
++Fetch remote B, merge B so here will be a confilct.
++
+
+E:\world\develop\java\android\git\project_test>git add --all
+
+E:\world\develop\java\android\git\project_test>git commit -m "make a conflict"
+[master 6e59b7b] make a conflict
+ 1 file changed, 10 insertions(+)
+
+E:\world\develop\java\android\git\project_test>git help push
+Launching default browser to display HTML ...
+
+E:\world\develop\java\android\git\project_test>git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 491 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/definedone/project_test.git
+   3c738d3..6e59b7b  master -> master
+Branch master set up to track remote branch master from origin.
+
+E:\world\develop\java\android\git\project_test>git add --all
+
+E:\world\develop\java\android\git\project_test>git commit -m "make a conflict"
+[master e7d534e] make a conflict
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+E:\world\develop\java\android\git\project_test>git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 389 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/definedone/project_test.git
+   6e59b7b..e7d534e  master -> master
+Branch master set up to track remote branch master from origin.
+
+E:\world\develop\java\android\git\project_test>git add --all
+
+E:\world\develop\java\android\git\project_test>git commit -m "make a conflict"
+[master 99fe7dc] make a conflict
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+E:\world\develop\java\android\git\project_test>git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 375 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/definedone/project_test.git
+   e7d534e..99fe7dc  master -> master
+Branch master set up to track remote branch master from origin.
+
+E:\world\develop\java\android\git\project_test>git add --all
+
+E:\world\develop\java\android\git\project_test>git commit -m "make a conflict"
+[master 036fd12] make a conflict
+ 1 file changed, 11 insertions(+), 4 deletions(-)
+
+E:\world\develop\java\android\git\project_test>git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 411 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/definedone/project_test.git
+   99fe7dc..036fd12  master -> master
+Branch master set up to track remote branch master from origin.
+
+E:\world\develop\java\android\git\project_test>

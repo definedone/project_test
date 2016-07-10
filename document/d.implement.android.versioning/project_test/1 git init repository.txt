@@ -1,0 +1,150 @@
+
+2016-7-10
+Microsoft Windows [版本 10.0.10586]
+(c) 2015 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Users\Administrator>cd E:\world\develop\java\android\git\project_test
+
+C:\Users\Administrator>E:
+
+E:\world\develop\java\android\git\project_test>git log --oneline
+9ebaa11 add line, add one line in master branch
+41425fa a new directory.
+9ac1edc wrote a readme file
+
+E:\world\develop\java\android\git\project_test>git branchs
+git: 'branchs' is not a git command. See 'git --help'.
+
+Did you mean this?
+        branch
+
+E:\world\develop\java\android\git\project_test>git branch
+* master
+  new_branch_one
+
+E:\world\develop\java\android\git\project_test>
+
+E:\world\develop\java\android\git\project_test>echo "# project_test" >> README.md
+
+E:\world\develop\java\android\git\project_test>git init
+Reinitialized existing Git repository in E:/world/develop/java/android/git/project_test/.git/
+
+E:\world\develop\java\android\git\project_test>git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   project_test_one/readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\world\develop\java\android\git\project_test>git add --all
+
+E:\world\develop\java\android\git\project_test>git commit -m "add read me"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+
+E:\world\develop\java\android\git\project_test>git config --global user.email definedone@163.com
+
+E:\world\develop\java\android\git\project_test>git config --global user.name definedone
+
+E:\world\develop\java\android\git\project_test>git commit -m "add read me"
+[master 7d8ec8c] add read me
+
+E:\world\develop\java\android\git\project_test>gitk
+
+E:\world\develop\java\android\git\project_test>git init
+Initialized empty Git repository in E:/world/develop/java/android/git/project_test/.git/
+
+E:\world\develop\java\android\git\project_test>git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+        project_test_one/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\world\develop\java\android\git\project_test>git add --all
+
+E:\world\develop\java\android\git\project_test>git commit -m "add read me and a folder"
+[master (root-commit) 3c738d3] add read me and a folder
+ 3 files changed, 10 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 project_test_one/deep_dir/deep_file.txt
+ create mode 100644 project_test_one/readme.txt
+
+E:\world\develop\java\android\git\project_test>git status
+On branch master
+nothing to commit, working directory clean
+
+E:\world\develop\java\android\git\project_test>git branch
+* master
+
+E:\world\develop\java\android\git\project_test>

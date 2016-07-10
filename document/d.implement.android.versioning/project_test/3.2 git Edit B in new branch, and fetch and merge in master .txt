@@ -1,0 +1,178 @@
+2016-7-10
+Microsoft Windows [版本 10.0.10586]
+(c) 2015 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>cd E:\world\develop\java\android\git\project_test_two
+
+C:\Users\Administrator>git branch -a
+fatal: Not a git repository (or any of the parent directories): .git
+
+C:\Users\Administrator>E:
+
+E:\world\develop\java\android\git\project_test_two>git branch -a
+* master
+  remotes/origin/master
+
+E:\world\develop\java\android\git\project_test_two>git help fetch
+Launching default browser to display HTML ...
+
+E:\world\develop\java\android\git\project_test_two>git fetch
+fatal: unable to access 'https://github.com/definedone/project_test.git/': Couldn't resolve host 'github.com'
+
+E:\world\develop\java\android\git\project_test_two>
+
+
+Microsoft Windows [版本 10.0.10586]
+(c) 2015 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>cd E:\world\develop\java\android\git\project_test_two
+
+C:\Users\Administrator>git fetch origin master
+fatal: Not a git repository (or any of the parent directories): .git
+
+C:\Users\Administrator>E:
+
+E:\world\develop\java\android\git\project_test_two>git fetch origin master
+From https://github.com/definedone/project_test
+ * branch            master     -> FETCH_HEAD
+
+E:\world\develop\java\android\git\project_test_two>git branch -a
+* master
+  remotes/origin/master
+
+E:\world\develop\java\android\git\project_test_two>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+E:\world\develop\java\android\git\project_test_two>git log --oneline
+0d4d1b4 edit folder A
+036fd12 make a conflict
+99fe7dc make a conflict
+e7d534e make a conflict
+6e59b7b make a conflict
+3c738d3 add read me and a folder
+
+E:\world\develop\java\android\git\project_test_two>git reset --hard HEAD
+HEAD is now at 0d4d1b4 edit folder A
+
+E:\world\develop\java\android\git\project_test_two>git reset --hard HEAD^
+More?
+More? N
+fatal: ambiguous argument 'HEAD
+N': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+E:\world\develop\java\android\git\project_test_two>git log --oneline
+0d4d1b4 edit folder A
+036fd12 make a conflict
+99fe7dc make a conflict
+e7d534e make a conflict
+6e59b7b make a conflict
+3c738d3 add read me and a folder
+
+E:\world\develop\java\android\git\project_test_two>git reset --hard HEAD~
+HEAD is now at 036fd12 make a conflict
+
+E:\world\develop\java\android\git\project_test_two>git log --oneline
+036fd12 make a conflict
+99fe7dc make a conflict
+e7d534e make a conflict
+6e59b7b make a conflict
+3c738d3 add read me and a folder
+
+E:\world\develop\java\android\git\project_test_two>git branch my_branch
+
+E:\world\develop\java\android\git\project_test_two>git branch -a
+* master
+  my_branch
+  remotes/origin/master
+
+E:\world\develop\java\android\git\project_test_two>git checkout my_branch
+Switched to branch 'my_branch'
+
+E:\world\develop\java\android\git\project_test_two>git status
+On branch my_branch
+nothing to commit, working directory clean
+
+E:\world\develop\java\android\git\project_test_two>git log --oneline
+036fd12 make a conflict
+99fe7dc make a conflict
+e7d534e make a conflict
+6e59b7b make a conflict
+3c738d3 add read me and a folder
+
+E:\world\develop\java\android\git\project_test_two>git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+E:\world\develop\java\android\git\project_test_two>git checkout my_branch
+Switched to branch 'my_branch'
+
+E:\world\develop\java\android\git\project_test_two>git status
+On branch my_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   project_test_one/readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\world\develop\java\android\git\project_test_two>git add --all
+
+E:\world\develop\java\android\git\project_test_two>git commit -m "edit folder B in new branch(not master branch)"
+[my_branch ad8d326] edit folder B in new branch(not master branch)
+ 1 file changed, 2 insertions(+)
+
+E:\world\develop\java\android\git\project_test_two>git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+E:\world\develop\java\android\git\project_test_two>git fetch origin/master
+fatal: 'origin/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\world\develop\java\android\git\project_test_two>git fetch origin master
+From https://github.com/definedone/project_test
+ * branch            master     -> FETCH_HEAD
+
+E:\world\develop\java\android\git\project_test_two>git log --oneline
+036fd12 make a conflict
+99fe7dc make a conflict
+e7d534e make a conflict
+6e59b7b make a conflict
+3c738d3 add read me and a folder
+
+E:\world\develop\java\android\git\project_test_two>git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+nothing to commit, working directory clean
+
+E:\world\develop\java\android\git\project_test_two>gitk
+
+E:\world\develop\java\android\git\project_test_two>git branch -a
+* master
+  my_branch
+  remotes/origin/master
+
+E:\world\develop\java\android\git\project_test_two>git merge origin master
+merge: origin - not something we can merge
+
+E:\world\develop\java\android\git\project_test_two>git help merge
+Launching default browser to display HTML ...
+
+E:\world\develop\java\android\git\project_test_two>git merge origin/master
+Updating 036fd12..0d4d1b4
+Fast-forward
+ project_test_one/readme.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+E:\world\develop\java\android\git\project_test_two>
